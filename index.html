@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        .heading{
+           text-align: center;
+           font-size: 35px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-color: rgb(163, 113, 113);
+            height: 90vh;
+        }
+        #form{
+            display: flex;
+            justify-content: center;
+        }
+        #form input{
+         background-color: rgb(49, 44, 44);
+         box-shadow: 0px 0px 5px 0px black;
+         height: 40px;
+         border: none;
+         font-size: 17px;
+         width: 160px;
+        }
+        #form button{
+            height: 40px;
+            background-color: rgb(133, 23, 235);
+            border: none;
+            padding: 10px;
+            margin-left: 5px;
+            color: white;
+            box-shadow: 0px 0px 5px 0px black ;
+            
+        }
+        #main{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            right: 60px;
+            top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #main ul li{
+            border-bottom: 1px solid black;
+            height: 35px;
+            width: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #main ul li:hover{
+           color: white;
+         background-color: rgb(1, 2, 2);
+         box-shadow: 0px 0px 9px 7px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="heading">Todo App</h1>
+
+    <form id="form">
+        <input type="text" placeholder="Add a new task" required>
+        <button type="submit">Add</button>
+    </form>
+    <div id="main">
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
